@@ -1,5 +1,11 @@
-.main{
+.main {
 	position: absolute;
-	margin-top: 10%;
-	margin-left: 10%;
+	margin-top: 4%;
+	margin-left: 30%;
 }
+
+#ciorba{
+	position: absolute;
+	margin-left: 50%;
+}
+
