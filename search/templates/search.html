@@ -2,11 +2,20 @@
 
 {% block content %}
 
-<form method="POST" action="">
+<form method="POST">
+{% csrf_token %}
 	<div class="search">
 		{{ form.as_p }}
 	</div>
 	<input type='submit' value="Search" id="ciorba" />
 </form>
+
+<div class="posts">
+	{% for tweet in tweets %}
+		{{ tweet.status }}
+		{{ tweet.date}}
+		<br>
+	{% endfor %}
+</div>
 
 {% endblock %}
