@@ -10,6 +10,7 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
@@ -78,12 +79,10 @@ USE_TZ = True
 
 TEMPLATE_DIRS = (
     #'~/Documents/ANIIISem2/Licenta/LearnDjango/lwc/src/templates/',
-    os.path.join(BASE_DIR, 'templates')
+    os.path.join(BASE_DIR, 'templates'),
     )
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
 
 STATIC_URL = '/static/'
-
-

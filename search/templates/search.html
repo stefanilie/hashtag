@@ -1,7 +1,8 @@
 {% extends "base.html" %}
 
 {% block content %}
-
+<!-- Change design, google style. 
+	Here we will have a mini devil and search bar -->
 <form method="POST">
 {% csrf_token %}
 	<div class="search">
@@ -11,11 +12,13 @@
 </form>
 
 <div class="posts">
+{% if tweets %}
 	{% for tweet in tweets %}
-		{{ tweet.status }}
-		{{ tweet.date}}
+		<li>{{ tweet.GetText }}</li>
+		<li>{{ tweet.date}}</li>
 		<br>
 	{% endfor %}
+{% endif %}
 </div>
 
 {% endblock %}
