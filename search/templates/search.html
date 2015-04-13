@@ -14,8 +14,7 @@
 <div class="posts">
 {% if tweets %}
 	{% for tweet in tweets %}
-		<li>{{ tweet.GetText }}</li>
-		<li>{{ tweet.date}}</li>
+		{{ tweet }}
 		<br>
 	{% endfor %}
 {% endif %}

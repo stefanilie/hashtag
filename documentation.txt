@@ -1,0 +1,20 @@
+1. git clone from git
+2. pip install python-twitter
+3. (django-embed) sudo python setup.py build 
+4. (django-embed) sudo python setup.py install
+5. sudo pip install -U requests
+6. https://www.facebook.com/hashtag/tananana
+
+incearca sa faci rost de token, dupa cu el apelezi linkul asta
+https://graph.facebook.com/v1.0/search?q=happy&type=post&access_token=364476387091009|kWIA9-xdkUloW3Q2r3KOph-Kc9U
+si pe baza lui teoretic primesti niste iduri.
+cu idurile alea faci rost de posturi embeded care le vei folosi mai tarziu.
+
+
+unde sunt acum:
+https://developers.facebook.com/docs/facebook-login/access-tokens
+https://graph.facebook.com/v1.0/search?q=happy&type=post&access_token={364476387091009|kWIA9-xdkUloW3Q2r3KOph-Kc9U}
+https://developers.facebook.com/docs/graph-api/using-graph-api/v2.3
+https://graph.facebook.com/search?q=coffee&access_token=364476387091009|kWIA9-xdkUloW3Q2r3KOph-Kc9U
+http://django-facebook.readthedocs.org/en/latest/index.html
+http://django-facebook-graph.readthedocs.org/en/latest/index.html
